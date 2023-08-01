@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  padding: 0px;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.containers{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 29, 77);
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ color: white;
+}
+.items{
+  min-width: 500px;
+  max-width: 500px;
+  height: 80px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  margin-top: 1rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+h1{
+  color: white;
+  text-transform: uppercase;
+}
+.button{
+  min-width: 100px;
+  max-width: 100px;
+  border: 0px;
+  background-color: rgb(29, 29, 77);
+  font-size: 1rem;
+  color: white;
+  padding: .4rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.borderLine{
+  min-width: 1000px;
+  max-width: 1000px;
+  height: 2px;
+  background-color: aliceblue;
+  margin-top: 1rem;
+}
+table{
+  border: 1px solid white;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+tbody tr{
+  margin-top: 10%;
+}
+button{
+  background-color: aliceblue;
+  color: black;
+  width: 20px;
+  margin-right: 10px;
+}
+.btnRed{
+  background-color: rgb(138, 38, 38);
+  color: rgb(255, 243, 243);
+  min-width: 200px;
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+label{
+  color: black;
+  margin-top: .7rem;
+  font-weight: 600;
+}
+.divFlex{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
