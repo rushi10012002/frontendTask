@@ -23,7 +23,11 @@ function App() {
   const HandleCreateNewUser = async (item) => {
     await axios.post("http://localhost:5000/api/user/createUser", item)
     getUserListData()
-    setuserNew({})
+    setuserNew({
+        userName:"",
+      email: "",
+      phone: "",
+    })
   }
   const HandleEditUser = async (item) => {
     await axios.post("http://localhost:5000/api/user/updateUser", item)
